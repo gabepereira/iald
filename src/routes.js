@@ -1,5 +1,5 @@
-import {createAppContainer, createSwitchNavigator} from 'react-navigation';
-import {Splash, Dashboard} from './pages';
+import { createAppContainer, createSwitchNavigator } from 'react-navigation';
+import { Splash, Dashboard } from './pages';
 
 export default createAppContainer(
   createSwitchNavigator(
