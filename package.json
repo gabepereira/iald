@@ -7,11 +7,14 @@
     "ios": "react-native run-ios",
     "start": "react-native start",
     "test": "jest",
-    "lint": "eslint ."
+    "lint": "eslint .",
+    "shake": "adb shell input keyevent 82",
+    "generate-apk": "cd android && ./gradlew assembleRelease",
+    "install-apk": "cd android && ./gradlew installRelease"
   },
   "dependencies": {
     "react": "16.9.0",
-    "react-native": "0.61.4",
+    "react-native": "0.61.5",
     "react-native-gesture-handler": "^1.5.1",
     "react-native-webview": "^7.5.1",
     "react-navigation": "^4.0.10"

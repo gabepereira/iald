@@ -1,5 +1,6 @@
 import React from 'react';
-import { View, StyleSheet, Text } from 'react-native';
+import { View, StyleSheet, Text, Image } from 'react-native';
+import logo from '../../assets/images/logo.jpg';
 
 export default class Splash extends React.Component {
   componentDidMount = () => {
@@ -9,8 +10,7 @@ export default class Splash extends React.Component {
   render() {
     return (
       <View style={styles.container}>
-        {/* <Image style={styles.bg} source={logo} resizeMode="contain" /> */}
-        <Text>Lasers in Dentistry</Text>
+        <Image style={styles.logo} source={logo} resizeMode="contain" />
       </View>
     );
   }
@@ -21,5 +21,10 @@ const styles = StyleSheet.create({
     flex: 1,
     justifyContent: 'center',
     alignItems: 'center',
+    backgroundColor: '#ffffff',
+  },
+
+  logo: {
+    width: '100%',
   },
 });
